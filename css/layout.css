@@ -1,0 +1,94 @@
+/*
+ *  整体样式
+ *  ---------------------------------------
+ *  作者: haibao(http://www.hehaibao.com/)
+ *  时间: 2015-11-11
+ *  企鹅：964279742
+ *  创意源于生活，代码如诗从你我开始
+ */
+html, body{width:100%;height:100%;background-color:#fcd974;}
+body,header,div,p,span,h1,img,ul,li,h1,h2,h3,h4,strong{margin:0;padding:0;}
+body{max-width:640px;margin:0 auto;overflow-x:hidden;line-height:24px;color:#666;font-size:14px;font-family: 'Microsoft Yahei', "微软雅黑",sans-serif;}
+a,button,input{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;-webkit-appearance: none;}
+ul,li{list-style-type: none;}
+img{max-width: 100%;height:auto;vertical-align: middle;}
+a{text-decoration: none;color:#666;-webkit-touch-callout: none!important;}
+
+/*公共样式*/
+.fw{width:100%;}
+.w90{width:90%;margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+.tc{text-align:center;}
+.tl{text-align:left;}
+.tr{text-align:right!important;}
+.oh{overflow:hidden;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.pf{position:fixed;}
+.ec{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.dn{display:none;}
+#toast{width:80%;position:fixed;top:20px;left:10%;border:1px solid #666;background-color:rgba(0,0,0,.8);color:#fff;padding:10px 0;text-align:center;opacity:.9;-webkit-transition:opacity .5s ease-out;transition:opacity .5s ease-out;}
+
+/*中奖记录*/
+.lottery_list ul{width:100%;padding-top:5px;}
+.lottery_list li{overflow:hidden;background-color:#fff;padding:10px 15px;margin-top:15px;border-radius:5px;}
+.lottery_lf{width:64%;}
+.lottery_name{color:#70bcee;font-size:1.1rem;font-weight:100;}
+.lottery_time{color:#a7dcff;font-size:.9rem;margin-top:3px;}
+.lottery_rt{margin-left:67%;}
+.receive_btn{display:block;padding:3px 10px;margin-top:10px;background-color:#70bcee;color:#fff;border-radius:20px;font-size:.95rem;}
+#my_lottery_list.lottery_list li{border:1px solid #dadada;}
+
+/*抽奖页*/
+#wrapper{height:inherit;padding-bottom:20px;background:#fcd974 url('../img/lottery_bg.jpg') no-repeat center center;background-size:cover;}
+.lottery_txt strong{color:#f25b3a;font-size:1.1rem;letter-spacing:1px;}
+#lottery_num{font-family:arial;font-size:1.3rem;}
+.lottery_txt p{color:#ffa200;font-size:.8rem;}
+.lottery_box{margin-bottom:3%;}
+.lottery_turntable{-webkit-transform:scale(.96);width:300px;margin:0 auto;height:300px;background-color:#ff5859;border-radius:50%;box-shadow:-1px 2px 4px #ff5758;}
+.turntable{-webkit-animation:rotate 7s linear both reverse infinite;height:100%;background:url("../img/dot.png") no-repeat center center;background-size:92%;}
+#lotterys{width:84%;margin:0 auto;position:absolute;left:8%;top:8%;z-index:2;-webkit-transform:rotate(-90deg);}
+#go{-webkit-transform-origin:center;width:100px;height:100px;background:url('../img/go.png') no-repeat center center;background-size:100%;position:absolute;left:50%;top:50%;margin:-55px 0 0 -50px;z-index:99998;}
+.lottery_btns{width:80%;margin:0 auto;}
+.btn{width:47%;height:30px;}
+#btn1{background:url('../img/btn1.png') no-repeat center center;background-size:contain;}
+#btn2{background:url('../img/btn2.png') no-repeat center center;background-size:contain;}
+
+/*活动规则弹出层*/
+.popover{height:100%;top:0;left:0;z-index:99998;background-color:rgba(0,0,0,.5);-webkit-animation:fd .5s ease both;}
+.close_btn{width:40px;height:40px;display:block;background:url('../img/close_btn.png') no-repeat;background-size:cover;position:fixed;top:9%;right:1%;z-index:99999;}
+.modal{width:94%;position:fixed;top:10%;left:1%;z-index:99999;display:none;background-color:#ffd231;background:url('../img/modal_bg.png') no-repeat;background-size:100% 100%;}
+.modal.m5{background:url('../img/modal_bg2.png') no-repeat;background-size:100% 100%;}
+.modal_title{width:70%;color:#fff;font-weight:700;font-size:1.2rem;letter-spacing:1px;text-shadow: 1px 1px 8px #e4941a;border-bottom:1px solid #e4941a;padding:15px 0;margin:auto auto 10px 20%;}
+.modal p{width:70%;color:#af5b00;margin-left:20%;font-size:.8rem;line-height:22px;text-align:center;}
+.m1 p{text-align:left;}
+.m1{height:390px;}
+.m2{height:300px;}
+.m2 p{margin-left:14%;}
+.m3{height:190px;padding-top:50px;}
+.m4{height:215px;padding-top:25px;}
+.m5{height:220px;padding-top:20px;}
+.lottery_records{width:70%;height:175px;margin:3% 0 0 20%;padding-bottom:20px;background-color:#ffd63a;border-radius:5px;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+.lottery_records li{width:90%;margin:0 auto;border-bottom:1px dashed #f4a91f;padding:5px 0;text-align:center;}
+.lottery_records li span{display:inline-block;margin-left:8px;}
+.m3 p{font-size:1.2rem;line-height:28px;}
+.modal_btns{width:46%;height:50px;margin:25px auto auto 30%;display:inline-block;}
+#share_btn{background:url('../img/share_btn.png') no-repeat center center;background-size:100%;}
+#come_again_btn{background:url('../img/come_again_btn.png') no-repeat center center;background-size:100%;}
+#receives_btn{background:url('../img/receives_btn.png') no-repeat center center;background-size:100%;}
+.sorry{width:60%;}
+.modal p.tip_txt{margin:30px auto 10px 20%;font-size:1.2rem;}
+.ok{width:84%;}
+.m6{background:none;top:2%;height:100%;}
+.m6 img{width:20%;}
+.m6 p{width:94%;margin-left:2%;color:#fff;font-size:1rem;}
+.share_arrow{margin-bottom:15px;}
+
+/*animation*/
+.fd{-webkit-animation: fd 1s ease both;}
+.dy02{-webkit-animation-delay:.2s;}
+.dy05{-webkit-animation-delay:.5s;}
+.dy08{-webkit-animation-delay:.8s;}
+@-webkit-keyframes fd { from {-webkit-opacity:0;opacity:0;} to {-webkit-opacity:1;opacity:1;} }
+@-webkit-keyframes rotate { from { -webkit-transform:rotate(180deg); } to { -webkit-transform:rotate(0deg); } }
